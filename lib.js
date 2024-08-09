@@ -53,7 +53,9 @@ function exec(chars, _2D, _3D, _4D, similar) {
         filterSimilarChars: !similar
       })) {
         if (num.length == t) {
-          result.push(num);
+          if (result.indexOf(num) < 0) {
+            result.push(num);
+          }
         }
       }
     }
